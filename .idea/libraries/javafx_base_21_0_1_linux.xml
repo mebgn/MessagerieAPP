@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="javafx-base-21.0.1-linux">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../BOUGAYDANE/javafx-base-21.0.1-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BOUGAYDANE/javafx-graphics-21.0.1-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../BOUGAYDANE/javafx-swing-21.0.1-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

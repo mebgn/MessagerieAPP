@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="activation-1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../activation-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../AnimateFX-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../emoji-java-5.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../json-20170516.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../WINDOWS.X64_213000_db_home.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Login.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Login.zip!/Login/src" />
+    </SOURCES>
+  </library>
+</component>

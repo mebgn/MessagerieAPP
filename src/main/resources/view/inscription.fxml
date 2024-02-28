@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InscriptionController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #2196f3;">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/icone.png" />
+                    </image>
+                </ImageView>
+                <Label text="ChatApp" textFill="#eeeeee">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" focusTraversable="true" prefHeight="400.0" prefWidth="399.0" style="-fx-background-color: #fff; -fx-border-radius: 10;">
+            <children>
+                <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Preloader.gif" />
+                            </image>
+                        </ImageView>
+                        <Label prefHeight="48.0" prefWidth="195.0" text="INSCRIPTION" textFill="#2194f3">
+                            <HBox.margin>
+                                <Insets left="20.0" top="15.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Comic Sans MS Bold" size="19.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="lastNameField" alignment="CENTER" cacheShape="false" prefHeight="35.0" prefWidth="153.0" promptText="last name" style="-fx-border-radius: 10; -fx-background-color: #fff; -fx-border-color: #2196f3;" />
+                        <TextField fx:id="firstNameField" alignment="CENTER" prefHeight="35.0" prefWidth="153.0" promptText="first name" style="-fx-border-color: #2196f3; -fx-border-radius: 10; -fx-background-color: #fff;">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <TextField fx:id="emailField" alignment="CENTER" prefHeight="35.0" prefWidth="339.0" promptText="your e-mail" style="-fx-background-color: #fff; -fx-border-color: #2196f3; -fx-border-radius: 10;">
+                    <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="passwordField" alignment="CENTER" prefHeight="35.0" prefWidth="339.0" promptText="Your Password" style="-fx-background-color: #fff; -fx-border-color: #2196f3; -fx-border-radius: 10;">
+                    <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="17.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <Label text="date of birth" textFill="#2196f3">
+                    <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                    </font>
+                </Label>
+                <DatePicker fx:id="birthDatePicker" prefWidth="184.0" style="-fx-background-color: #2196f3;">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </DatePicker>
+                <Label text="sex" textFill="#2196f3">
+                    <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="29.0" prefWidth="388.0">
+                    <children>
+                        <RadioButton fx:id="maleRadioButton" mnemonicParsing="false" text="homme">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="sex" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="femaleRadioButton" mnemonicParsing="false" text="femme" toggleGroup="$sex">
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                        </RadioButton>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+
+                <!-- Add Register button -->
+                <Button fx:id="registerButton" onAction="#handleRegisterButton" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #2196f3; -fx-text-fill: #ffffff; -fx-border-radius: 10;" text="Register">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</HBox>
